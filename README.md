@@ -22,7 +22,7 @@ I obtained my baseline IP address before I had to activate the VPN. The ProtonVP
 * **Location:** Mumbai, India
 
 ![My IP address before connecting to the VPN](<./Before VPN.png>)
-![ProtonVPN client showing my real IP before connection](<./ProtonVPN Disconnected.jpg>)
+![ProtonVPN client showing my real IP before connection](<./ProtonVPN Disconnected.png>)
 
 ### Step 2: VPN Connection (VPN Activated)
 
@@ -31,7 +31,7 @@ Next I used ProtonVPN, the result was that I was assigned to the **Fastest free 
 * **New IP:** `185.132.132.203`
 * **Location:** Netherlands
 
-![ProtonVPN client showing a successful connection to a Netherlands server](<./ProtonVPN Connected.jpg>)
+![ProtonVPN client showing a successful connection to a Netherlands server](<./ProtonVPN Connected.png>)
 
 ### Step 3: IP Address Verification
 
