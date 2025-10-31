@@ -2,7 +2,7 @@
 
 # Elevate Labs Cybersecurity Internship - Task 8
 
-## 🛡️ Task 8: VPN Setup and Analysis
+## Task 8: VPN Setup and Analysis
 
 This repository is a submission to the task 8 of the Elevate Labs Cybersecurity Internship. This task was aimed at knowing how Virtual Private Networks (VPNs) may be used to preserve privacy and ensure the safety of online communication.
 
