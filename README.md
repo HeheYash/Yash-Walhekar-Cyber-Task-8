@@ -4,7 +4,7 @@
 
 ## 🛡️ Task 8: VPN Setup and Analysis
 
-This repository contains the submission for Task 8 of the Elevate Labs Cybersecurity Internship. The objective of this task was to understand the role of Virtual Private Networks (VPNs) in protecting privacy and securing online communication.
+This repository is a submission to the task 8 of the Elevate Labs Cybersecurity Internship. This task was aimed at knowing how Virtual Private Networks (VPNs) may be used to preserve privacy and ensure the safety of online communication.
 
 ### Tools Used
 * **VPN Client:** ProtonVPN (Free Tier)
@@ -12,11 +12,11 @@ This repository contains the submission for Task 8 of the Elevate Labs Cybersecu
 
 ## Part 1: VPN Setup and Verification Process
 
-The core of the task was to install a VPN, connect to a server, and verify that my public IP address had been successfully masked.
+The essence of the assignment was to install a VPN, connect to a server, and ensure that my public IP address has been masked.
 
 ### Step 1. Baseline IP Address (VPN Disconnected)
 
-Before activating the VPN, I established my baseline IP address. The ProtonVPN client correctly identified my real IP and location, and this was confirmed by visiting `whatismyipaddress.com`.
+I obtained my baseline IP address before I had to activate the VPN. The ProtonVPN client was able to correctly identify my actual IP and location and this was verified by going to `whatismyipaddress.com`.
 
 * **Original IP:** `My_IP_Address`
 * **Location:** Mumbai, India
@@ -26,7 +26,7 @@ Before activating the VPN, I established my baseline IP address. The ProtonVPN c
 
 ### Step 2: VPN Connection (VPN Activated)
 
-I then connected to the "Fastest free server" on ProtonVPN, which assigned me a server in the Netherlands. The client application confirmed a successful and protected connection.
+Next I used ProtonVPN, the result was that I was assigned to the **Fastest free server**, and my assigned server was the Netherlands. A successful and secure connection was proven by the client application.
 
 * **New IP:** `185.132.132.203`
 * **Location:** Netherlands
@@ -35,55 +35,55 @@ I then connected to the "Fastest free server" on ProtonVPN, which assigned me a 
 
 ### Step 3: IP Address Verification
 
-After the VPN connection was established, I refreshed `whatismyipaddress.com` to verify the change. The website confirmed that my public IP address was now the one assigned by the VPN server, and my location was masked as Naaldwijk, Netherlands.
+Once the connection with VPN was made, I opened `whatismyipaddress.com` to check the change. The site verified that the new public IP address of my computer was that of the VPN server and the location was hidden as Naaldwijk, Netherlands.
 
 ![Verifying the new IP address after connecting to the VPN](<./After VPN.png>)
 
 ## Part 2. VPN Benefits and Limitations
 
 ### Benefits of Using a VPN
-* **Privacy:** Masks your real IP address, preventing websites and online services from tracking your physical location.
-* **Security:** Encrypts all your internet traffic, making it unreadable to anyone trying to intercept it (like attackers on public Wi-Fi or your own ISP).
-* **Bypass Censorship:** Allows access to websites and content that may be blocked in your geographic region by routing your traffic through a server in another country.
+* **Privacy:** Hides your IP address, so that sites and internet services will not be able to monitor your physical location.
+* **Security:** Secures every internet traffic, and no one will be able to read it (including hackers on unsecured Wi-Fi or your internet provider).
+* **Bypass Censorship:** Gives you the freedom to access websites and materials that could be blocked on your geographic region by directing your traffic to a server in another country.
 
 ### Limitations of a VPN
-* **Speed Reduction:** The process of encrypting and routing your traffic through a remote server almost always results in a loss of internet speed.
-* **Trust in the Provider:** A VPN protects you from your ISP, but you must trust the VPN provider. A VPN with a poor "no-logs" policy could still record and expose your activity.
-* **Not Complete Anonymity:** A VPN does not make you 100% anonymous. You can still be tracked by browser cookies, device fingerprinting, or by logging into personal accounts (like Google or Facebook).
+* **Speed Reduction:** Internet speed will be reduced nearly every time you crypt and route your traffic across a remote server.
+* **Trust in the Provider:** VPN will guard you against your ISP, though you will have to put your trust into VPN provider. Even the VPN company that has a pathetic no-logs policy might track and reveal your browsing history.
+* **Not Complete Anonymity:** VPN is not going to make you entirely anonymous. There is still the ability to trace you using browser cookies, device fingerprinting or even with the use of personal accounts (such as Google or Facebook)
 
 ---
 
-## Part 3: Research on VPN Encryption & Privacy Features
+## Part 3: VPN Encryption and Privacy Features Studies.
 
-This section details the core technologies that make a VPN a powerful tool for privacy and security.
+In this section, the main technologies that can make a VPN effective privacy and security tool will be described.
 
 ### 1. VPN Encryption
 
-Encryption is the process of scrambling your internet data, making it an unreadable code to anyone who might intercept it, such as your ISP or hackers.
+Encryption is the art of scrambling your data on the internet, it is a coded message that no one can read it, even somebody hacking in to intercept your data, like your ISP, or a hacker.
 
 #### The Encryption Standard: AES-256
 
-* The industry-gold standard for security is the **Advanced Encryption Standard (AES)**.
-* VPNs almost always use **AES-256**, which refers to the 256-bit key size.
-* This is a symmetric-key algorithm, meaning the same key is used to encrypt and decrypt the data.
-* A 256-bit key has $2^{256}$ possible combinations, a number so large that it is considered practically unbreakable by modern computers. It's the same encryption standard trusted by governments and financial institutions to protect classified information.
+* The security standard used in the industry is the **Advanced Encryption Standard (AES)**.
+* VPN typically virtually always relies on the **AES-256**, meaning the key size of 256.
+* It is a symmetric-key algorithm, i.e. the key is the same one that is on which the data is encrypted and decrypted.
+* The number of combinations of a key of 256 bits is $2^{256}$, a rather big number, which can hardly be broken by a modern computer. It is the same encryption standard that is relied on by governments and financial institutions to keep information classified.
 
 #### The "Tunnel": VPN Protocols
 
-Encryption needs a **tunneling protocol** to create a secure and stable connection (the "tunnel") between your device and the VPN server. The protocol is the set of rules that builds this tunnel and applies the encryption.
+To establish a secure and stable connection (the "tunnel" is what is needed here) between your device and the VPN server, encryption requires a **tunneling protocol**. The protocol is that code of rules which constructs this tunnel and executes the encryption.
 
 | Protocol | Key Characteristics |
 | :--- | :--- |
-| **OpenVPN** | **Best All-Rounder:** Highly secure, flexible, and open-source. It's an industry standard and is excellent at bypassing firewalls because it can be configured to run on common ports (like TCP port 443, which regular HTTPS traffic uses). |
-| **WireGuard** | **Fastest Speed:** A modern, lightweight protocol with a simple codebase, making it easier to audit. It is extremely fast, making it ideal for streaming, gaming, and large downloads. |
-| **IKEv2/IPsec** | **Best for Mobile:** Stands for "Internet Key Exchange version 2". It is known for its speed and, most importantly, its stability. It is excellent at re-establishing a connection if you switch networks (e.g., moving from Wi-Fi to cellular data), making it a top choice for mobile devices. |
+| **OpenVPN** | **Best All-Rounder:** Extremely secure, adaptable and open-source. It is a common industry standard and is very effective in beating firewalls since it can be set to operate on the typical ports (such as TCP port 443, which is used by typical traffic on the HTTPS). |
+| **WireGuard** | **Fastest Speed:** A lightweight and modern protocol featuring simple codebase, therefore simpler to audit. It is very high in speed and therefore suited in streaming, playing games and downloading large files. |
+| **IKEv2/IPsec** | **Best for Mobile:** Abbreviation of "Internet Key Exchange version 2. It has a reputation of being fast and most importantly stable. It also does a great job though in restoring connection in case you change network (say switching Wi-Fi on cellular or vice versa) which makes it one of the best options in mobile devices. |
 
 ### 2. Key Privacy Features
 
 While encryption protects your *data*, these features protect your *identity*.
 
-* **IP Address Masking:** This is the most fundamental feature. The VPN hides your real IP address and replaces it with the IP address of the VPN server, protecting your location and identity.
-* **No-Logs Policy:** This is a crucial promise from the VPN provider that they **do not collect or store** any information about your online activity, such as websites visited, files downloaded, or connection timestamps. This means they have no data to share with authorities or for hackers to steal. The most trustworthy VPNs have this policy verified by independent, third-party audits.
-* **VPN Kill Switch:** This is a critical safety feature. If your VPN connection unexpectedly drops, the kill switch automatically **blocks your device from accessing the internet**. This prevents your real IP address and unencrypted data from being accidentally exposed.
-* **Split Tunneling:** This feature allows you to choose which apps or websites use the VPN tunnel and which connect to the internet directly. This is useful for balancing security with speed for low-risk applications (e.g., letting a streaming app connect directly while your browser remains secured).
-* **DNS Leak Protection:** When you type a website, your computer asks a DNS server to find its IP. A DNS leak happens when this request bypasses the VPN. Secure VPNs prevent this by forcing all DNS requests through their own encrypted tunnel, ensuring your ISP cannot see your browsing activity.
+* **IP Address Masking:** This is the most basic characteristic. The VPN conceals your actual IP address and substitutes it with the IP address of the VPN server keeping your location and identity secret.
+* **No-Logs Policy:** This is one of the critical assurances of the VPN provider that they **do not gather or maintain** any data on information concerning your online activity like websites accessed, files downloaded, or connection time-stamps. This implies that they can not provide any data to the authorities or that can be stolen by hackers. The most reliable VPNs already have such a policy checked by independent, third party audits.
+* **VPN Kill Switch:** This is a very important safety item. Once your VPN connection suddenly goes dead, the kill switch will travel into effect barricading your equipment to the online environment. This will **not leave your true IP-address and un-ciphered information accidentally exposed**.
+* **Split Tunneling:** There is an option to select which applications or websites go through the VPN tunnel and which go straight to the internet. This can be handy to trade security against speed on low risk applications (ex: allowing a streaming application to bypass your browser as your browser remains secure).
+* **DNS Leak Protection:** When you enter a Web address, a DNS server requests your computer to locate the IP of the Web address. In the event this request is not met by VPN, it results in a DNS leak. The secure VPNs can stop this by redirecting all your DNS traffic through their encrypted tunnel so that your ISP will not be able to monitor your browsing history.
