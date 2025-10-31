@@ -21,8 +21,8 @@ I obtained my baseline IP address before I had to activate the VPN. The ProtonVP
 * **Original IP:** `My_IP_Address`
 * **Location:** Mumbai, India
 
-![My IP address before connecting to the VPN](<./Before VPN.png>)
-![ProtonVPN client showing my real IP before connection](<./ProtonVPN Disconnected.png>)
+![My IP address before connecting to the VPN](Before%20VPN.png)
+![ProtonVPN client showing my real IP before connection](ProtonVPN%20Disconnected.png)
 
 ### Step 2: VPN Connection (VPN Activated)
 
@@ -31,13 +31,13 @@ Next I used ProtonVPN, the result was that I was assigned to the **Fastest free 
 * **New IP:** `185.132.132.203`
 * **Location:** Netherlands
 
-![ProtonVPN client showing a successful connection to a Netherlands server](<./ProtonVPN Connected.png>)
+![ProtonVPN client showing a successful connection to a Netherlands server](ProtonVPN%20Connected.png)
 
 ### Step 3: IP Address Verification
 
 Once the connection with VPN was made, I opened `whatismyipaddress.com` to check the change. The site verified that the new public IP address of my computer was that of the VPN server and the location was hidden as Naaldwijk, Netherlands.
 
-![Verifying the new IP address after connecting to the VPN](<./After VPN.png>)
+![Verifying the new IP address after connecting to the VPN](After%20VPN.png)
 
 ## Part 2. VPN Benefits and Limitations
 
